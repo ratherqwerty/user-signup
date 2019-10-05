@@ -5,21 +5,22 @@
     <form method="POST">
         <label>
             User Name:
-            <input type="text" name="username" />
+            <input type="text" name="username" value="{{username}}"/>
             <p class="error">{{username_error}}</p>
         </label>
         <label>
             Password:
-            <input type="password" name="password1" />
+            <input type="password" name="password1" value="{{password1}}" />
         </label>
+        <br><br>
         <label>
             Re-enter Password:
-            <input type="password" name="password2" />
+            <input type="password" name="password2" value="{{password2}}" />
             <p class="error">{{password_error}}</p>
         </label>
         <label>
             Enter Email (Optional):
-            <input type="text" name="email" />
+            <input type="text" name="email" value="{{email}}" />
             <p class="error">{{email_error}}</p>
         </label>
         <input type="submit" value="Submit" />
