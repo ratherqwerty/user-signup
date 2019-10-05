@@ -40,7 +40,7 @@ def validate():
 
     if len(email) == 0:
         email_error = email_error
-    elif email.find("@") == -1 or email.find(".") == -1 or len(email) > 20 or len(email) < 3:
+    elif email.find("@") == -1 or email.find(".") == -1 or len(email) > 20 or len(email) < 3 or email.find(" ") != -1:
         email_error = "That is not a valid email"
        
     if not len(username_error) >=1 and not len(password_error) >= 1 and not len(email_error) >= 1:
